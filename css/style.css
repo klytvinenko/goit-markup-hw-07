@@ -204,13 +204,14 @@ ul,ol {
   background-image: linear-gradient(
     rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)),
-   url(../img/people-office\ 1.jpg);
+   url(../img/hero_bg_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   margin-left: auto;
   margin-right: auto;
 }
+
 .hero-title {
   width: 318px;
   font-weight: 700;

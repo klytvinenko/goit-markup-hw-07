@@ -6,6 +6,12 @@
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+   url(../img/hero_bg_tab.jpg);
+     margin-left: auto;
+    margin-right: auto;
 
   }
   .hero-title {
