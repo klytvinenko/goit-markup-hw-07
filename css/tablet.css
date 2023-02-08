@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+  .hero {
+    max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+  }
+  .hero-title {
+    width: 494px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+  .team > .container {
+    width: 586px;
+   }
+  .customers {
+    padding-top: 72px;
+    padding-bottom: 96px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+  
+  }
+}
