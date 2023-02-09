@@ -1,9 +1,145 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1408px;
+    max-width: 1158px;
   }
+  /* ---------HEADER--------- */
+  /* ----LOGO---- */
+.logo {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-button-color);
+  text-decoration: none;
+  display: block;
+
+  margin-right: 77px;
+
+
+
+}
+.logo-pading {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.accent-header-logo{
+  color: var(--color-headlines)
+
+}
+p, h1, h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+ul,ol {
+  margin: 0;
+  padding-left: 0;;
+}
+
+/* ----HEADER---- */
+.head {
+  /* position: absolute;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px; */
+  background: var(--button-h1);
+  border-bottom: 1px solid #E7E9FC;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  
+}
+.head > .container {
+  display: flex;
+  align-items: center;
+}
+.nav-navigation {
+  display: flex;
+  align-items:center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.list-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-headlines);
+  text-decoration: none;
+ 
+
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
+.contact-item {
+  
+}
+
+.nav-a {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-headlines);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-a:hover,
+.nav-a:focus {
+  color: var(--primary-button-color);
+}
+.nav-a.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  opacity: 1;
+  width: 100%;
+  height: 4px;
+  background-color:var(--button-hover);
+  border-radius: 2px;
+}
+.nav-a.current {
+  color: var(--button-hover);
+}
+
+/* .nav-a:active::after{
+  opacity: 1;
+} */
+
+
+/* .contact-item:hover,
+.contact-item:focus {
+  color: #4D5AE5;
+} */
+
+.contact-a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-a:hover,
+.contact-a:focus {
+  color: var(--primary-button-color);
+}
+  /* --------HERO-------- */
   .hero {
-    max-width: 1440px;
+    min-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     margin-left: auto;
@@ -13,6 +149,17 @@
     rgba(46, 47, 66, 0.7)),
    url(../img/hero_bg.jpg);
   }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)),
+     url(../img/hero_bg_2x.jpg);
+  }
+}
   .hero-title {
     width: 494px;
     font-weight: 700;
@@ -22,6 +169,16 @@
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .team-list {
+    /* padding-left: 156px; */
+    /* padding-right: 156px;
+    padding-bottom: 120px; */
+    display: flex;
+    /* gap: 24px; */
+  
+  
+  
   }
   .customers {
     padding-top: 72px;

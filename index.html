@@ -25,7 +25,7 @@
 
   </head>
   <body>
-    <!-- <header class="head">
+    <header class="head">
       <div class="container">
         <nav class="nav-navigation">
           <div class="logo-pading">
@@ -56,8 +56,81 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./img/symbol-defs.svg#icon-menu_open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+<div class="menu-container is-hidden" data-menu>
+  <div class="mob-menu">
+    <button type="button" class="menu-close" data-menu-close>
+      <svg class="menu-close-icon" width="8" height="8">
+        <use href="./img/symbol-defs.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+<div class="menu-one">
+  <ul class="menu-list list">
+    <nav class="menu-navigation">
+      <li class="menu-item">
+        <a href="./" class="mob-menu-list current">Studio</a>
+      </li>
+      <li class="menu-item">
+        <a href="./portfolio.html" class="mob-menu-list"> Portfolio</a>
+      </li>
+      <li class="menu-item"><a href="" class="mob-menu-list">Contacts</a></li>
+    </nav>
+  </ul>
+</div>
+<div class="menu-two">
+  <ul class="contact-menu list">
+    <li class="contact-menu-item">
+      <a href="tel:+110001111111" class="mob-menu-tel"
+        >+11 (000) 111-11-11</a
+      >
+    </li>
+    <li class="contact-menu-item">
+      <a href="mailto:info@devstudio.com" class="mob-menu-contact"
+  >info@devstudio.com</a
+      >
+    </li>
+  </ul>
+  <div class="menu-position">
+    <ul class="icons-soc-mob list">
+      <li class="icons-soc-item-mob">
+        <a href="" class="icons-soc-link-mob">
+          <svg class="icons-link" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-instagram_menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="icons-soc-item-mob">
+        <a href="" class="icons-soc-link-mob">
+          <svg class="icons-link" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-twitter_menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="icons-soc-item-mob">
+        <a href="" class="icons-soc-link-mob">
+          <svg class="icons-link" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-facebook_menu"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="icons-soc-item-mob">
+        <a href="" class="icons-soc-link-mob">
+          <svg class="icons-link" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-linkedin_menu"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -161,6 +234,9 @@
               <img
                 src="./img/mark.jpg"
                 alt="Mark Guerrero"
+                srcset=" 
+                 ./img/mark.jpg 1x,
+                 ./img/mark_2x.jpg 2x"
                 width="260"
                 height="264"
               />
@@ -203,6 +279,9 @@
               <img
                 src="./img/tom.jpg"
                 alt="Tom Ford"
+                srcset=" 
+                ./img/tom.jpg 1x,
+                ./img/tom_2x.jpg 2x"
                 width="260"
                 height="264"
               />
@@ -245,6 +324,9 @@
               <img
                 src="./img/camila.jpg"
                 alt="Camila Garcia"
+                srcset=" 
+                ./img/camila.jpg 1x,
+                ./img/camila_2x.jpg 2x"
                 width="260"
                 height="264"
               />
@@ -287,6 +369,9 @@
               <img
                 src="./img/daniel.jpg"
                 alt="Daniel Wilson"
+                srcset=" 
+                ./img/daniel.jpg 1x,
+                ./img/daniel_2x.jpg 2x"
                 width="260"
                 height="264"
               />
@@ -509,5 +594,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

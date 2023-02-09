@@ -50,7 +50,7 @@ img {
     margin: -1px;
 } 
 .container {
-  width: 1158px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -70,7 +70,7 @@ img {
   text-decoration: none;
   display: block;
 
-  margin-right: 77px;
+
 
 
 
@@ -93,16 +93,8 @@ ul,ol {
 
 /* ----HEADER---- */
 .head {
-  /* position: absolute;
-  width: 1440px;
-  height: 72px;
-  left: 0px;
-  top: 0px; */
   background: var(--button-h1);
   border-bottom: 1px solid #E7E9FC;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
-  
 }
 .head > .container {
   display: flex;
@@ -114,10 +106,11 @@ ul,ol {
 }
 
 .nav-list {
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
-.list-item {
+/* .list-item {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -126,13 +119,13 @@ ul,ol {
   text-decoration: none;
  
 
-}
+} */
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 40px;
 }
-.contact-item {
+/* .contact-item {
   
 }
 
@@ -168,16 +161,6 @@ ul,ol {
   color: var(--button-hover);
 }
 
-/* .nav-a:active::after{
-  opacity: 1;
-} */
-
-
-/* .contact-item:hover,
-.contact-item:focus {
-  color: #4D5AE5;
-} */
-
 .contact-a {
   font-weight: 400;
   font-size: 16px;
@@ -190,9 +173,141 @@ ul,ol {
 .contact-a:hover,
 .contact-a:focus {
   color: var(--primary-button-color);
+} */
+.menu-container {
+
 }
 
+.menu-open {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+.menu-open-icon {
+  stroke: #2E2F42;
+  margin-left: 160px;
+}
+
+.menu-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-icon {
+
+}
+.mob-menu {
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--button-h1);
+  padding: 40px;
+}
+.menu-container > .mob-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+.menu-list {
+
+}
+.menu-navigation {
+  margin-top: 49px;
+  margin-bottom: 50px;
+}
+.menu-item:not(:last-child) {
+margin-bottom: 40px;
+}
+.mob-menu-list {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--color-headlines);
+}
+.list-item {
+}
+.contact-menu {
+}
+.contact-menu-item {
+
+}
+
+.contact-menu-item:not(last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-tel {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: calc(40/36);
+  color: var(--primary-button-color);
+  text-decoration: none;
+
+}
+.mob-menu-contact {
+ font-weight: 500;
+ font-size: 20px;
+  line-height: calc(24/20);
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-position {
+  display: flex;
+}
+.icons-soc-mob {
+  display: flex;
+  gap: 56px;
+  margin-bottom: 48px;
+
+}
+.icons-soc-item-mob {
+  width: 40px;
+  height: 40px;
+
+}
+.icons-soc-link-mob {
+  width: 100%;
+  height: 100%;
+  background-color:var(--primary-button-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-one {
+
+}
+
+.menu-two {
+
+}
+
+
+
 /* ----HERO---- */
+
 
 .hero {
   display: flex;
@@ -210,6 +325,16 @@ ul,ol {
   background-size:cover;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7), 
+      rgba(46, 47, 66, 0.7)),
+     url(../img/hero_bg_mob_2x.jpg);
+  }
 }
 
 .hero-title {
@@ -332,10 +457,8 @@ ul,ol {
 
 }
 .work-list {
-
   display: flex;
   gap: 24px;
-
 }
 .work-item {
 }
