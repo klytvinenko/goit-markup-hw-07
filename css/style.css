@@ -606,8 +606,10 @@ margin-bottom: 40px;
   margin-bottom: 72px;
 
 }
-.logo .foot-logo{
+.logo {
+  display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 .foot-footer {
@@ -623,6 +625,7 @@ margin-bottom: 40px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 16px;
+  text-align: center;
 }
 .social-foot-list {
   display: flex;
@@ -655,7 +658,7 @@ margin-bottom: 40px;
 
 }
 .footer-icons-information {
-  margin-left: 120px;
+
 }
 .footer-subscribe {
   margin-left:auto;
