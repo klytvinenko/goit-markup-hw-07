@@ -174,4 +174,37 @@
   
   }
   /* ----FOOTER---- */
+  .foot-text {
+    margin-bottom: 0;
+  }
+  .tab-position {
+    display: flex;
+    gap: 24px;
+
+  }
+  .subscribe-text {
+    justify-content: flex-start;
+  }
+  .subcribe-input {
+    width: 264px;
+
+  }
+  .subscribe-form {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .footer-subscribe {
+
+  }
+  .footer-field-form {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .subsribe-button {
+    margin-left: 0;
+  }
 }
