@@ -29,6 +29,10 @@
   
   }
   /* ----HEADER---- */
+  .menu-open {
+
+    display: none;
+  }
   .nav-list {
     display: flex;
     gap: 30px;
@@ -125,6 +129,18 @@
     font-size: 56px;
     line-height: 1.1;
   }
+  /* ----SKILLS---- */
+  .skills-list {
+  display: flex;
+    gap: 24px;
+  }
+  .skills-item {
+    flex-wrap: wrap;
+    width: calc((100% - 24px)/2);
+  }
+
+
+
   .team {
     padding-top: 96px;
     padding-bottom: 104px;

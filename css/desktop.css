@@ -29,13 +29,7 @@
   color: var(--color-headlines)
 
 }
-p, h1, h2,h3,h4,h5,h6 {
-  margin: 0;
-}
-ul,ol {
-  margin: 0;
-  padding-left: 0;;
-}
+
 
 /* ----HEADER---- */
 .head {
@@ -50,10 +44,11 @@ ul,ol {
   padding-bottom: 24px; */
   
 }
-.head > .container {
-  display: flex;
-  align-items: center;
+.menu-open {
+
+  display: none;
 }
+
 .nav-navigation {
   display: flex;
   align-items:center;
@@ -166,6 +161,50 @@ ul,ol {
     font-size: 56px;
     line-height: 1.1;
   }
+
+  /* ----SKILLS---- */
+  .skills {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.skills-title {
+}
+.skills-list {
+  display: flex;
+  gap: 24px;
+}
+.skills-item {
+  width: calc((100% - 72px) / 4)
+}
+.section-skills-icons {
+  height: 112px;
+  background-color:var(--button-portfolio);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.skills-icons {
+}
+
+.skills-pre-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-headlines);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.skills-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+  /* ----TEAM---- */
   .team {
     padding-top: 120px;
     padding-bottom: 120px;

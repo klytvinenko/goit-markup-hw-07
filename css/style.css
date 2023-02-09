@@ -184,10 +184,14 @@ ul,ol {
   padding: 0;
   background: transparent;
   border: none;
+  display: block;
+  margin-left: auto;
+  
 }
 .menu-open-icon {
   stroke: #2E2F42;
-  margin-left: 160px;
+  
+  
 }
 
 .menu-close {
@@ -373,22 +377,22 @@ margin-bottom: 40px;
 
 /* ----SKILLS---- */
 .skills {
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 .skills-title {
 }
 .skills-list {
-  display: flex;
+  
   gap: 24px;
 }
 .skills-item {
-  width: calc((100% - 72px) / 4)
+  width: 100%;
 }
 .section-skills-icons {
   height: 112px;
   background-color:var(--button-portfolio);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -397,47 +401,24 @@ margin-bottom: 40px;
 .skills-icons {
 }
 
-/* .skills-item::before {
-  content: '';
-  display: block;
-  width: 264px;
-  height: 112px;
-  background-color:var(--button-portfolio);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid var(--button-portfolio);
-
-}
-.skills-item:nth-child(1)::before {
-  background-image: url(../img/strategy.svg);
-}
-
-.skills-item:nth-child(2)::before {
-  background-image: url(../img/punctuality.svg);
-}
-
-.skills-item:nth-child(3)::before {
-  background-image: url(../img/diligence.svg);
-}
-
-.skills-item:nth-child(4)::before {
-  background-image: url(../img/astronaut.svg);
-} */
 .skills-pre-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-headlines);
+  text-align: center;
   margin-bottom: 8px;
-  margin-top: 8px;
+
 }
 .skills-text {
+  display: inline-block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  
 }
 
 
