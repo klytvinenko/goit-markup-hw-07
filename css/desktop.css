@@ -272,6 +272,7 @@
   }
   .social-foot-list {
     display: flex;
+    justify-content: center;
     gap: 24px;
   
   }
@@ -304,7 +305,8 @@
     margin-left: 120px;
   }
   .footer-subscribe {
-    margin-left:auto;
+    margin-left: 80px;
+
   
   }
   .subcribe-form {
