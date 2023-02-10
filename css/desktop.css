@@ -171,11 +171,17 @@
 }
 .skills-list {
   display: flex;
-  gap: 24px;
+  row-gap: 24px;
+  column-gap: 72px;
 }
 .skills-item {
-  width: calc((100% - 72px) / 4)
+  width: calc((100% - 72px) / 4);
+
 }
+/* .skills-item:nth-child(2) {
+  margin-bottom: 72px;
+} */
+
 .section-skills-icons {
   height: 112px;
   background-color:var(--button-portfolio);
@@ -269,6 +275,7 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: left;;
   }
   .social-foot-list {
     display: flex;
