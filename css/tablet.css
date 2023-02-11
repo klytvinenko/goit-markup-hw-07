@@ -135,9 +135,15 @@
     flex-wrap: wrap;
  
     justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
   }
   .skills-item {
     width: calc((100% - 24px)/2);
+    margin-bottom: 0;
+  }
+  .skills-item:not(:last-child) {
+    margin-bottom: 0;
   }
   .skills-pre-title {
     font-weight: 600;
@@ -168,9 +174,14 @@
     padding-top: 72px;
     padding-bottom: 96px;
   }
+  .customers-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
   .customers-item {
     width: calc((100% - 48px) / 3);
     height: 88px;
+    margin-bottom: 0;
   
   }
   /* ----FOOTER---- */
@@ -196,7 +207,7 @@
   }
 
   .footer-subscribe {
-
+   margin-top: 0;
   }
   .footer-field-form {
     display: flex;
@@ -206,5 +217,8 @@
   }
   .subsribe-button {
     margin-left: 0;
+  }
+  .foot-container {
+    padding-left: 108px;
   }
 }

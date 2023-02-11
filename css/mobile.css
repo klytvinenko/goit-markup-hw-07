@@ -3,4 +3,10 @@
   .container {
     
   }
+  .footer-text-information {
+    margin-bottom: 72px;
+  }
+  .footer-subscribe {
+    margin-top: 72px;
+  }
 }

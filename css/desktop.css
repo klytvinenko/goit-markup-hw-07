@@ -172,7 +172,7 @@
 .skills-list {
   display: flex;
   row-gap: 24px;
-  column-gap: 72px;
+  /* column-gap: 72px; */
 }
 .skills-item {
   width: calc((100% - 72px) / 4);

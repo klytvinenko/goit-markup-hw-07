@@ -387,12 +387,12 @@ margin-bottom: 40px;
 .skills-title {
 }
 .skills-list {
-  
-  gap: 24px;
+gap: 24px;
 }
 .skills-item {
   width: 100%;
 }
+
 
 .skills-item:not(:last-child) {
   margin-bottom: 72px;
@@ -629,7 +629,7 @@ margin-bottom: 40px;
 
 }
 .footer-text-information {
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .soc-text {
   font-style: normal;
@@ -676,8 +676,7 @@ margin-bottom: 40px;
 }
 .footer-subscribe {
   margin-left:auto;
-  margin-top: 72px;
-
+  /* margin-top: 72px; */
 
 }
 .subcribe-form {
