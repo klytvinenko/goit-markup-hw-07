@@ -175,11 +175,14 @@
     padding-bottom: 96px;
   }
   .customers-list {
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    justify-content: center;
   }
   .customers-item {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
     height: 88px;
     margin-bottom: 0;
   
